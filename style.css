@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    min-height: 320vh;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.banner video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+.container{
+ 
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: initial center;
+     max-width: 1200px; 
+     width: 100%;
+     flex-wrap:wrap;     
+     z-index: 1;
+  }
+ .container .card{
+    position: relative;
+    width: 230px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(154, 149, 149, 0.545);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.676);
+    border-left: 1px solid rgba(255, 255, 255, 0.676) ;
+    backdrop-filter: blur(7px);
+  }
+ .container .card .content{
+   padding: 20px;
+   
+   text-align: center;
+   transform: translateY(30px);
+   opacity: 0.8;
+   transition:  0.5s; 
+ }
+ .container .card:hover .content{
+  transform: translateY(0px);
+  opacity: 1;
+ }
+
+ .container .card .content h2{
+   position: absolute;
+   top: -70px;
+   right: -25px;
+   font-size: 7em;
+   color: rgba(255, 255, 255, 0.05);
+
+ }
+ .container .card .content h3{
+  z-index: 1;
+  font-size: 1.8em;
+  font-weight: 600;
+  border: #191717;
+
+}
+.container .card .content p{
+ 
+  font-size: 1em;
+  font-weight: 300;
+   color: #ffffff;
+
+}
+.container .card .content a{
+  position:relative;
+  display: inline block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #ffffff;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.333);
+}
+
